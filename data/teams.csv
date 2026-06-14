@@ -1,0 +1,84 @@
+# teams.csv — Datos estructurales de selecciones nacionales
+# Fuentes: FIFA Rankings (junio 2025), Banco Mundial GDP per cápita 2023, UN Population 2024
+# Transfermarkt (valor de mercado estimado), estimaciones del autor para índices culturales
+# NOTA: Estos son datos aproximados con fines de modelado. No constituyen datos oficiales.
+# Última actualización de referencia: Junio 2025
+#
+# Columnas:
+#   name: Nombre oficial de la selección
+#   code: Código ISO 3166-1 alpha-3
+#   fifa_ranking: Posición en ranking FIFA (junio 2025)
+#   elo_points: Puntos Elo estimados (escala World Football Elo, ref. 2025)
+#   gdp_per_capita: GDP per cápita en USD (Banco Mundial 2023)
+#   population_millions: Población en millones (ONU 2024)
+#   avg_temp_celsius: Temperatura promedio anual del país (°C)
+#   football_culture_index: Qué tan dominante es el fútbol en el país (0-100)
+#   squad_strength_index: Calidad del plantel (0-100, basado en valor de mercado Transfermarkt relativo)
+#   confederation: Confederación FIFA (UEFA/CONMEBOL/CONCACAF/CAF/AFC/OFC)
+name,code,fifa_ranking,elo_points,gdp_per_capita,population_millions,avg_temp_celsius,football_culture_index,squad_strength_index,confederation
+Argentina,ARG,1,2143,13722,46.1,17.5,98,91,CONMEBOL
+France,FRA,2,2085,44408,68.4,11.0,95,96,UEFA
+England,ENG,3,2050,46125,56.4,10.0,97,95,UEFA
+Belgium,BEL,4,1998,51768,11.7,10.5,90,88,UEFA
+Brazil,BRA,5,2048,10296,216.4,25.0,99,90,CONMEBOL
+Portugal,POR,6,2012,24560,10.2,16.5,97,92,UEFA
+Netherlands,NED,7,1995,62153,17.9,10.0,94,89,UEFA
+Spain,ESP,8,1989,32668,47.4,14.5,96,90,UEFA
+Croatia,CRO,9,1965,21678,3.9,12.5,90,80,UEFA
+Italy,ITA,10,1952,36813,59.3,13.5,97,84,UEFA
+Germany,GER,11,1944,53820,83.4,9.5,96,87,UEFA
+Colombia,COL,12,1927,6651,52.2,24.0,95,78,CONMEBOL
+Uruguay,URU,13,1920,22009,3.5,18.0,97,75,CONMEBOL
+Morocco,MAR,14,1912,3801,37.8,17.5,88,70,CAF
+United States,USA,15,1897,80412,341.8,12.0,55,72,CONCACAF
+Mexico,MEX,16,1885,12673,130.9,21.0,90,68,CONCACAF
+Switzerland,SUI,17,1882,98767,8.8,8.5,85,79,UEFA
+Senegal,SEN,18,1875,1693,17.8,28.5,90,65,CAF
+Denmark,DEN,19,1871,69273,5.9,8.0,88,80,UEFA
+Japan,JPN,20,1862,33950,124.5,15.5,75,72,AFC
+Austria,AUT,21,1855,53268,9.1,9.0,88,76,UEFA
+Iran,IRN,22,1848,6401,89.8,17.0,80,60,AFC
+South Korea,KOR,23,1843,33745,51.7,12.0,72,68,AFC
+Ecuador,ECU,24,1838,6285,18.2,22.0,88,62,CONMEBOL
+Ukraine,UKR,25,1831,4534,44.1,9.5,90,70,UEFA
+Australia,AUS,26,1822,64960,26.5,21.5,60,63,AFC
+Turkey,TUR,27,1818,12999,85.3,12.0,90,70,UEFA
+Hungary,HUN,28,1812,21078,10.0,11.0,82,62,UEFA
+Slovakia,SVK,29,1808,21611,5.5,9.5,80,58,UEFA
+Romania,ROU,30,1802,16792,19.0,10.5,88,58,UEFA
+Wales,WAL,31,1797,29500,3.2,11.0,90,60,UEFA
+Czech Republic,CZE,32,1792,27667,10.9,9.5,85,63,UEFA
+Poland,POL,33,1788,18005,37.8,9.0,88,67,UEFA
+Serbia,SRB,34,1782,10460,6.9,12.0,90,66,UEFA
+Egypt,EGY,35,1776,3699,105.9,22.5,88,62,CAF
+Nigeria,NGA,36,1771,2184,228.0,27.0,90,63,CAF
+Algeria,ALG,37,1768,5694,45.6,23.0,88,60,CAF
+Chile,CHI,38,1763,16265,19.5,14.0,93,62,CONMEBOL
+Sweden,SWE,39,1758,58977,10.4,6.5,85,68,UEFA
+Venezuela,VEN,40,1748,9018,33.6,27.0,72,50,CONMEBOL
+Ivory Coast,CIV,41,1742,2572,27.7,27.0,88,62,CAF
+Russia,RUS,42,1736,14248,144.4,5.5,85,60,UEFA
+Peru,PER,43,1731,7126,33.4,18.5,90,58,CONMEBOL
+Paraguay,PAR,44,1726,5966,7.5,23.0,88,55,CONMEBOL
+Greece,GRE,45,1720,21614,10.6,17.0,88,57,UEFA
+Israel,ISR,46,1714,54930,9.8,20.0,72,58,UEFA
+Bolivia,BOL,47,1708,3545,12.4,17.0,85,44,CONMEBOL
+Costa Rica,CRC,48,1704,12612,5.3,23.0,85,52,CONCACAF
+Panama,PAN,49,1699,16278,4.4,27.0,80,47,CONCACAF
+Ghana,GHA,50,1694,2356,33.6,27.5,88,55,CAF
+Saudi Arabia,KSA,51,1689,29922,36.9,26.5,75,55,AFC
+Qatar,QAT,52,1682,81968,3.0,28.5,65,48,AFC
+Canada,CAN,53,1675,56798,38.9,3.5,55,55,CONCACAF
+Scotland,SCO,40,1854,42000,5.5,9.0,82,40,UEFA
+Bosnia & Herzegovina,BIH,52,1808,7500,3.3,12.0,72,32,UEFA
+Norway,NOR,38,1865,82800,5.5,5.5,75,46,UEFA
+South Africa,RSA,58,1724,6800,62.0,14.0,60,26,CAF
+Tunisia,TUN,34,1822,3800,12.0,22.0,75,23,CAF
+DR Congo,COD,56,1738,550,105.0,24.0,68,22,CAF
+Cape Verde,CPV,48,1762,3700,0.6,25.5,72,16,CAF
+Haiti,HAI,82,1621,1700,11.5,28.0,58,14,CONCACAF
+Curaçao,CUW,86,1593,19000,0.19,28.5,58,10,CONCACAF
+Iraq,IRQ,66,1718,5500,42.0,26.0,70,20,AFC
+Jordan,JOR,71,1688,4300,10.5,24.0,62,18,AFC
+Uzbekistan,UZB,64,1728,2200,36.0,22.0,62,19,AFC
+New Zealand,NZL,96,1572,42000,5.1,10.0,32,12,OFC

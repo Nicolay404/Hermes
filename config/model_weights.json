@@ -1,0 +1,65 @@
+{
+  "_comment": "Pesos del modelo econométrico inspirado en Klement (2014) y Hoffmann, Ging & Ramasamy (2002).",
+  "_comment2": "Todos los pesos son ajustables sin modificar código. Suma de structural_weights debe ser ~1.0",
+  "_last_updated": "2025-06-13",
+  "_version": "1.0.0",
+  "structural_weights": {
+    "gdp_per_capita": 0.25,
+    "population_football": 0.25,
+    "fifa_elo_ranking": 0.25,
+    "squad_strength": 0.25
+  },
+  "gdp_saturation_threshold": 60000,
+  "_gdp_comment": "En USD. Por encima de este umbral, el GDP aporta rendimientos decrecientes (otros deportes compiten con el fútbol)",
+  "home_advantage": {
+    "_comment": "Bonus de localía multiplicado por tipo de partido",
+    "mundial": 0.15,
+    "clasificatoria": 0.1,
+    "torneo_continental": 0.12,
+    "amistoso": 0.05,
+    "nations_league": 0.08
+  },
+  "climate_penalty": {
+    "_comment": "Penalización por diferencia de temperatura (°C). Por cada grado de diferencia, se aplica este factor.",
+    "per_degree_difference": 0.004,
+    "max_penalty": 0.25
+  },
+  "match_type_variance": {
+    "_comment": "Factor de varianza aleatoria por tipo de partido (mayor = más impredecible)",
+    "mundial": 1.0,
+    "clasificatoria": 1.1,
+    "torneo_continental": 1.05,
+    "amistoso": 1.35,
+    "nations_league": 1.15
+  },
+  "match_type_form_weight": {
+    "_comment": "Cuánto pesa la forma reciente (Elo/ranking) vs factores estructurales de largo plazo",
+    "mundial": 0.45,
+    "clasificatoria": 0.55,
+    "torneo_continental": 0.5,
+    "amistoso": 0.6,
+    "nations_league": 0.52
+  },
+  "xg_conversion": {
+    "_comment": "Parámetros para convertir diferencia de fuerza en goles esperados (xG)",
+    "base_goals_per_match": 1.25,
+    "strength_to_xg_slope": 0.4,
+    "min_xg": 0.2,
+    "max_xg": 4.0
+  },
+  "h2h_weight": {
+    "_comment": "Peso del historial H2H en el ajuste final de fuerza (0 = ignorar H2H, 1 = solo H2H)",
+    "value": 0.15,
+    "max_matches_considered": 10,
+    "recency_decay": 0.85
+  },
+  "monte_carlo": {
+    "iterations": 50000,
+    "random_seed": 42
+  },
+  "altitude_penalty": {
+    "_comment": "Penalización por altitud de la sede para equipos no acostumbrados (por encima de 1500m)",
+    "threshold_meters": 1500,
+    "penalty_per_100m_above": 0.008
+  }
+}
